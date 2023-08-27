@@ -1,0 +1,116 @@
+/* Define um grid para exibir os elementos com a classe 'pokemons'. */
+.pokemons {
+    display: grid;
+    grid-template-columns: 1fr; /* Define uma coluna flexível no grid. */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Estiliza os diferentes tipos de Pokémon com cores de fundo diferentes. */
+.normal {
+    background-color: #a6a877;
+}
+
+.grass {
+    background-color: #77c850;
+}
+
+/* Mais estilos para outros tipos de Pokémon. */
+
+/* Define estilos para cada elemento com a classe 'pokemon'. */
+.pokemon {
+    display: flex;
+    flex-direction: column; /* Organiza os conteúdos em colunas dentro de um Pokémon. */
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+/* Estiliza o número de cada Pokémon. */
+.pokemon .number {
+    color: #000;
+    opacity: .3;
+    text-align: right;
+    font-size: 1rem;
+}
+
+/* Estiliza o nome de cada Pokémon. */
+.pokemon .name {
+    text-transform: capitalize; /* Transforma a primeira letra do nome em maiúscula. */
+    color: #fff;
+    margin-bottom: .25rem;
+    font-family: cursive;
+}
+
+/* Estiliza os detalhes de cada Pokémon. */
+.pokemon .detail {
+    display: flex;
+    flex-direction: column;
+    align-items: inherit;
+    justify-content: space-between;
+}
+
+/* Estiliza os tipos de cada Pokémon. */
+.pokemon .detail .types {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* Estiliza cada tipo de Pokémon. */
+.pokemon .detail .types .type {
+    color: #fff;
+    padding: .25rem 1.5rem;
+    margin: .25rem 0;
+    font-size: .800rem;
+    border-radius: 1rem;
+    filter: brightness(1.1);
+    text-align: center;
+}
+
+/* Define estilos para as imagens dos Pokémon. */
+.pokemon .detail img {
+    max-width: 100%;
+    height: 70px;
+}
+
+/* Define estilos para a paginação. */
+.pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+/* Define estilos para os botões de paginação. */
+.pagination button {
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #6c79db;
+    border: none;
+    border-radius: 1rem;
+}
+
+/* Define regras de mídia para ajustar o grid de Pokémon em telas maiores. */
+@media screen and (min-width: 380px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr; /* 2 colunas em telas maiores que 380px. */
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr; /* 3 colunas em telas maiores que 576px. */
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 colunas em telas maiores que 992px. */
+    }
+}
