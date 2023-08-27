@@ -1,55 +1,33 @@
-/* Define o estilo padrão de caixa para todos os elementos, onde a largura e altura incluem bordas e preenchimento. */
 * {
     box-sizing: border-box;
 }
 
-/* Define a cor de fundo para o corpo do documento. */
 body {
     background-color: #f6f8fc;
 }
-
-/* Estiliza os cabeçalhos dentro da classe 'content'. */
-.content h1 {
-    /* Define margem à direita e à esquerda do cabeçalho. */
+.content h1{
+   
     margin-right: 9.375rem;
     margin-left: 9.9375rem;
-    /* Define a cor do texto do cabeçalho como branco. */
     color: #fff;
-    /* Define a cor de fundo do cabeçalho. */
     background-color: #6c79db;
-    /* Remove as bordas do cabeçalho. */
     border: none;
-    /* Arredonda os cantos do cabeçalho. */
     border-radius: 1rem;
 }
-
-/* Estiliza o contêiner com a classe 'content'. */
 .content {
-    /* Define a largura do contêiner para ocupar toda a largura da tela. */
     width: 100vw;
-    /* Define a altura do contêiner para ocupar toda a altura da tela. */
     height: 100vh;
-    /* Adiciona espaçamento interno ao contêiner. */
     padding: 1rem;
-    /* Define a cor de fundo do contêiner como branco. */
     background-color: #fff;
-    /* Centraliza o conteúdo dentro do contêiner horizontalmente. */
     text-align: center;
-    /* Define a fonte usada para o texto no contêiner. */
     font-family: 'Roboto', sans-serif;
 }
 
-/* Define estilos específicos para telas com largura mínima de 992px. */
 @media screen and (min-width: 992px) {
-    /* Dentro da regra de mídia, ajusta o contêiner com a classe 'content'. */
     .content {
-        /* Define a largura máxima do contêiner em telas largas. */
         max-width: 992px;
-        /* Ajusta a altura do contêiner automaticamente. */
         height: auto;
-        /* Centraliza o contêiner horizontalmente com margens superior e inferior de 1rem e espaçamento interno de 1rem. */
         margin: 1rem auto;
-        /* Arredonda os cantos do contêiner. */
         border-radius: 1rem;
     }
 }

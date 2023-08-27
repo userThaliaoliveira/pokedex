@@ -1,13 +1,11 @@
-/* Define um grid para exibir os elementos com a classe 'pokemons'. */
 .pokemons {
     display: grid;
-    grid-template-columns: 1fr; /* Define uma coluna flexível no grid. */
+    grid-template-columns: 1fr;
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-/* Estiliza os diferentes tipos de Pokémon com cores de fundo diferentes. */
 .normal {
     background-color: #a6a877;
 }
@@ -16,18 +14,78 @@
     background-color: #77c850;
 }
 
-/* Mais estilos para outros tipos de Pokémon. */
+.fire {
+    background-color: #ee7f30;
+}
 
-/* Define estilos para cada elemento com a classe 'pokemon'. */
+.water {
+    background-color: #678fee;
+}
+
+.electric {
+    background-color: #f7cf2e;
+}
+
+.ice {
+    background-color: #98d5d7;
+}
+
+.ground {
+    background-color: #dfbf69;
+}
+
+.flying {
+    background-color: #a98ff0;
+}
+
+.poison {
+    background-color: #a040a0;
+}
+
+.fighting {
+    background-color: #bf3029;
+}
+
+.psychic {
+    background-color: #f65687;
+}
+
+.dark {
+    background-color: #725847;
+}
+
+.rock {
+    background-color: #b8a137;
+}
+
+.bug {
+    background-color: #a8b720;
+}
+
+.ghost {
+    background-color: #6e5896;
+}
+
+.steel {
+    background-color: #b9b7cf;
+}
+
+.dragon {
+    background-color: #6f38f6;
+}
+
+.fairy {
+    background-color: #f9aec7;
+}
+
 .pokemon {
     display: flex;
-    flex-direction: column; /* Organiza os conteúdos em colunas dentro de um Pokémon. */
+    flex-direction: column;
     margin: .5rem;
     padding: 1rem;
     border-radius: 1rem;
 }
 
-/* Estiliza o número de cada Pokémon. */
 .pokemon .number {
     color: #000;
     opacity: .3;
@@ -35,15 +93,14 @@
     font-size: 1rem;
 }
 
-/* Estiliza o nome de cada Pokémon. */
 .pokemon .name {
-    text-transform: capitalize; /* Transforma a primeira letra do nome em maiúscula. */
+    text-transform: capitalize;
     color: #fff;
     margin-bottom: .25rem;
     font-family: cursive;
+
 }
 
-/* Estiliza os detalhes de cada Pokémon. */
 .pokemon .detail {
     display: flex;
     flex-direction: column;
@@ -51,14 +108,12 @@
     justify-content: space-between;
 }
 
-/* Estiliza os tipos de cada Pokémon. */
 .pokemon .detail .types {
     padding: 0;
     margin: 0;
     list-style: none;
 }
 
-/* Estiliza cada tipo de Pokémon. */
 .pokemon .detail .types .type {
     color: #fff;
     padding: .25rem 1.5rem;
@@ -69,13 +124,11 @@
     text-align: center;
 }
 
-/* Define estilos para as imagens dos Pokémon. */
 .pokemon .detail img {
     max-width: 100%;
     height: 70px;
 }
 
-/* Define estilos para a paginação. */
 .pagination {
     display: flex;
     flex-direction: row;
@@ -85,7 +138,6 @@
     padding: 1rem;
 }
 
-/* Define estilos para os botões de paginação. */
 .pagination button {
     padding: .25rem .5rem;
     margin: .25rem 0;
@@ -96,21 +148,20 @@
     border-radius: 1rem;
 }
 
-/* Define regras de mídia para ajustar o grid de Pokémon em telas maiores. */
 @media screen and (min-width: 380px) {
     .pokemons {
-        grid-template-columns: 1fr 1fr; /* 2 colunas em telas maiores que 380px. */
+        grid-template-columns: 1fr 1fr;
     }
 }
 
 @media screen and (min-width: 576px) {
     .pokemons {
-        grid-template-columns: 1fr 1fr 1fr; /* 3 colunas em telas maiores que 576px. */
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
 @media screen and (min-width: 992px) {
     .pokemons {
-        grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 colunas em telas maiores que 992px. */
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
