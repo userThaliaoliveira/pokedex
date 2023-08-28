@@ -4,7 +4,7 @@ const loadMoreButton = document.getElementById('loadMoreButton'); // Botão "Car
 
 // Define constantes para controle da exibição dos Pokémon.
 const maxRecords = 151; // Número máximo total de registros de Pokémon.
-const limit = 10; // Quantidade de Pokémon a carregar por vez.
+const limit = 20; // Quantidade de Pokémon a carregar por vez.
 let offset = 0; // Deslocamento para carregar Pokémon.
 
 // Função para converter um Pokémon em um elemento de lista (<li>).
