@@ -147,6 +147,15 @@
     border: none;
     border-radius: 1rem;
 }
+.content h1{
+   
+    margin-right: 9.375rem;
+    margin-left: 9.9375rem;
+    color: #fff;
+    background-color: #6c79db;
+    border: none;
+    border-radius: 1rem;
+}
 
 @media screen and (min-width: 380px) {
     .pokemons {
