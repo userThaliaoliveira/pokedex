@@ -5,15 +5,7 @@
 body {
     background-color: #f6f8fc;
 }
-.content h1{
-   
-    margin-right: 9.375rem;
-    margin-left: 9.9375rem;
-    color: #fff;
-    background-color: #6c79db;
-    border: none;
-    border-radius: 1rem;
-}
+
 .content {
     width: 100vw;
     height: 100vh;
